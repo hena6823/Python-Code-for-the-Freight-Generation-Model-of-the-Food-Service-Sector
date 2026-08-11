@@ -1,4 +1,4 @@
-Freight Generation Model for the Food and Beverage Service Sector
+Freight Generation Model for the Food Service Sector
 
 Overview
 
