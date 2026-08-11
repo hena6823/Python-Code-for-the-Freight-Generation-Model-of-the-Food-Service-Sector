@@ -2,7 +2,7 @@ Freight Generation Model for the Food Service Sector
 
 Overview
 
-This repository contains the Python code used to develop and evaluate the Freight Generation Models for the Food and Beverage Service Sector in Addis Ababa, Ethiopia.
+This repository contains the Python code used to develop and evaluate the Freight Generation Models for the Food Service Sector in Addis Ababa, Ethiopia.
 
 The analysis forms part of an MSc thesis on urban freight generation modelling. The objective is to estimate annual Freight Production (FP) and Freight Attraction (FA) using establishment-level characteristics.
 
@@ -10,7 +10,7 @@ The analysis applies Ordinary Least Squares (OLS) multiple regression to examine
 
 Study Sector
 
-The model focuses on the Food and Beverage Service Sector (ISIC Code 56) in Addis Ababa.
+The model focuses on the Food Service Sector (ISIC Code 56) in Addis Ababa.
 
 The dataset contains 317 food service establishments. The analysis considers both outbound Freight Production and inbound Freight Attraction.
 
@@ -68,7 +68,7 @@ Evaluating model performance using MAE, RMSE, and R².
 
 For both FP and FA, 80% of the observations were used for model estimation and 20% were reserved for hold-out testing.
 
-For the Food and Beverage sector, this resulted in:
+For the Food service sector, this resulted in:
 
 Training observations: 253
 
@@ -96,7 +96,7 @@ X₃ = Gross Floor Area (m²)
 
 Freight Production Model
 
-The estimated Food and Beverage FP equation is:
+The estimated Food FP equation is:
 
 FP = 94.724 + 19.701(Years) + 52.670(Employees) + 0.050(GFA)
 
@@ -112,7 +112,7 @@ Gross Floor Area: β₃ = 0.050, p = 0.039
 
 Freight Attraction Model
 
-The estimated Food and Beverage FA equation is:
+The estimated Food FA equation is:
 
 FA = 91.341 + 13.174(Years) + 46.123(Employees) + 0.042(GFA)
 
@@ -128,7 +128,7 @@ Gross Floor Area: β₃ = 0.042, p = 0.032
 
 Model Performance
 
-The Food and Beverage models demonstrate strong explanatory and predictive performance.
+The Food service sector models demonstrate strong explanatory and predictive performance.
 
 Freight Production
 
@@ -176,7 +176,7 @@ For the Freight Production model, Number of Years in Operation, Number of Employ
 
 The same three variables are statistically significant in the Freight Attraction model.
 
-Number of Employees has the largest estimated coefficient in both models, indicating its strong relationship with freight generation within the Food and Beverage sector.
+Number of Employees has the largest estimated coefficient in both models, indicating its strong relationship with freight generation within the Food service sector.
 
 Python Libraries
 
@@ -197,8 +197,6 @@ statsmodels
 scipy
 
 The principal modelling procedures used in the final analysis are LinearRegression from scikit-learn and OLS regression from statsmodels.
-
-The notebook also imports Random Forest, Gradient Boosting, and XGBoost regression tools as part of the Python modelling environment.
 
 Reproducibility
 
@@ -224,7 +222,7 @@ This code supports research on urban freight generation modelling in Addis Ababa
 
 The analysis contributes to the development of establishment-based freight generation models for service-sector establishments, with particular attention to the relationship between freight demand and establishment characteristics.
 
-The Food and Beverage model presented here forms part of a broader multi-sector freight generation study covering selected service sectors in Addis Ababa.
+The Food service sector model presented here forms part of a broader multi-sector freight generation study covering selected service sectors in Addis Ababa.
 
 The results provide sector-specific estimates of Freight Production and Freight Attraction that can support urban freight planning and demand estimation for food service establishments.
 
@@ -250,4 +248,4 @@ Disclaimer
 
 This repository contains research code developed for academic purposes.
 
-The models are calibrated for the Food and Beverage Service Sector in Addis Ababa and should not be assumed to be directly transferable to other cities or sectors without appropriate validation and, where necessary, recalibration.
+The models are calibrated for the Food Service Sector in Addis Ababa and should not be assumed to be directly transferable to other cities or sectors without appropriate validation and, where necessary, recalibration.
